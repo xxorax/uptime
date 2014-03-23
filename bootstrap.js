@@ -8,7 +8,7 @@ if (!config.mongodb.connectionString) {
   if (config.mongodb.password) {
     config.mongodb.connectionString += ':' + config.mongodb.password;
   }
-  config.mongodb.connectionString += '@' + config.mongodb.server +'/' + config.mongodb.database);
+  config.mongodb.connectionString += '@' + config.mongodb.server +'/' + config.mongodb.database;
 }
 
 mongoose.connect(config.mongodb.connectionString);
